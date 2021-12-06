@@ -27,8 +27,7 @@ namespace xmljson1
     {
       XmlSerializer serializer = new XmlSerializer(typeof(Output));
       _xml = new XmlDocument();
-      using (MemoryStream stream = new MemoryStream())
-      {
+      using (MemoryStream stream = new MemoryStream()) { 
         XmlWriter writer = XmlWriter.Create(stream, new XmlWriterSettings { OmitXmlDeclaration = true, Indent = true });
         serializer.Serialize(writer, _output);
         stream.Position = 0;

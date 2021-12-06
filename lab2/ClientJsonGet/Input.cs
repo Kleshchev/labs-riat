@@ -13,7 +13,7 @@
     }
     public Input()
     {
-      this.K = K;
+      this.K = 1;
       this.Sums = new decimal[0];
       this.Muls = new int[0];
     }

@@ -12,7 +12,7 @@ namespace ServerPOST
         {
             ServerJson.JsonView json;
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://127.0.0.1:8888/");
+            listener.Prefixes.Add("http://127.0.0.1:1234/");
             listener.Start();
             Console.WriteLine("Ожидание подключений...");
             int responseCount = 0;
